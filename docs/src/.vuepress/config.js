@@ -2,10 +2,6 @@ const { description } = require('../../package');
 const fs = require('fs');
 const path = require('path');
 
-const docs = fs.readdirSync(path.join(__dirname, '../guide'));
-const slideBarTexts = docs.map(doc => doc.replace(/.md$/, ''));
-console.log('qwjklkaqlsdaasd', slideBarTexts.map(x => [`/guide/${x}`, x]) );
-
 module.exports = {
 	base: '/sz-docs/',
   title: '生椰拿铁',
