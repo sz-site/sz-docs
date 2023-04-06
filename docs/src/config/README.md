@@ -1,8 +1,10 @@
 ---
-sidebar: auto
+# sidebar: auto
+# sidebarDepth: 3
 ---
 
-# Config
+<!-- [SZ](https://github.com/yyx990803) -->
+<!-- # Config
 
 ## foo
 
@@ -12,4 +14,4 @@ sidebar: auto
 ## bar
 
 - Type: `string`
-- Default: `/`
+- Default: `/` -->
