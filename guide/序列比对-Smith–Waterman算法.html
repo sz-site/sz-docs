@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>算法简介 | 生椰拿铁</title>
+    <meta name="generator" content="VuePress 1.9.9">
+    <link rel="icon" href="https://static.uino.cn/uino_favicon_32.ico">
+    <meta name="description" content="sz docs">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    
+    <link rel="preload" href="/sz-docs/assets/css/0.styles.677476a9.css" as="style"><link rel="preload" href="/sz-docs/assets/js/app.5b32c35c.js" as="script"><link rel="preload" href="/sz-docs/assets/js/2.733019b2.js" as="script"><link rel="preload" href="/sz-docs/assets/js/43.bc99f8ea.js" as="script"><link rel="prefetch" href="/sz-docs/assets/js/10.053ba524.js"><link rel="prefetch" href="/sz-docs/assets/js/11.1159667a.js"><link rel="prefetch" href="/sz-docs/assets/js/12.b7682a80.js"><link rel="prefetch" href="/sz-docs/assets/js/13.b40896ae.js"><link rel="prefetch" href="/sz-docs/assets/js/14.7d6cdd2a.js"><link rel="prefetch" href="/sz-docs/assets/js/15.96809982.js"><link rel="prefetch" href="/sz-docs/assets/js/16.9183fc9e.js"><link rel="prefetch" href="/sz-docs/assets/js/17.ecc2fb02.js"><link rel="prefetch" href="/sz-docs/assets/js/18.cbb699f8.js"><link rel="prefetch" href="/sz-docs/assets/js/19.be221f77.js"><link rel="prefetch" href="/sz-docs/assets/js/20.2607d007.js"><link rel="prefetch" href="/sz-docs/assets/js/21.88cceb8e.js"><link rel="prefetch" href="/sz-docs/assets/js/22.c2db27be.js"><link rel="prefetch" href="/sz-docs/assets/js/23.5ab628b9.js"><link rel="prefetch" href="/sz-docs/assets/js/24.c2cdaaf6.js"><link rel="prefetch" href="/sz-docs/assets/js/25.bb060f6b.js"><link rel="prefetch" href="/sz-docs/assets/js/26.88d6c7f3.js"><link rel="prefetch" href="/sz-docs/assets/js/27.ef250fa3.js"><link rel="prefetch" href="/sz-docs/assets/js/28.91b5a71e.js"><link rel="prefetch" href="/sz-docs/assets/js/29.745520d1.js"><link rel="prefetch" href="/sz-docs/assets/js/3.79377ed2.js"><link rel="prefetch" href="/sz-docs/assets/js/30.13248181.js"><link rel="prefetch" href="/sz-docs/assets/js/31.faef1119.js"><link rel="prefetch" href="/sz-docs/assets/js/32.35b4c0f9.js"><link rel="prefetch" href="/sz-docs/assets/js/33.549cceab.js"><link rel="prefetch" href="/sz-docs/assets/js/34.8255ba0d.js"><link rel="prefetch" href="/sz-docs/assets/js/35.b405a383.js"><link rel="prefetch" href="/sz-docs/assets/js/36.5a2bf352.js"><link rel="prefetch" href="/sz-docs/assets/js/37.fade1781.js"><link rel="prefetch" href="/sz-docs/assets/js/38.c8d2ce07.js"><link rel="prefetch" href="/sz-docs/assets/js/39.376ae4ae.js"><link rel="prefetch" href="/sz-docs/assets/js/4.da3ef268.js"><link rel="prefetch" href="/sz-docs/assets/js/40.0acd063f.js"><link rel="prefetch" href="/sz-docs/assets/js/41.9f78abdc.js"><link rel="prefetch" href="/sz-docs/assets/js/42.6a89ac09.js"><link rel="prefetch" href="/sz-docs/assets/js/44.69b35b37.js"><link rel="prefetch" href="/sz-docs/assets/js/45.e2b2355f.js"><link rel="prefetch" href="/sz-docs/assets/js/46.effed0fc.js"><link rel="prefetch" href="/sz-docs/assets/js/47.e6a07c4f.js"><link rel="prefetch" href="/sz-docs/assets/js/48.2b8050ee.js"><link rel="prefetch" href="/sz-docs/assets/js/49.56faf412.js"><link rel="prefetch" href="/sz-docs/assets/js/5.dac787d8.js"><link rel="prefetch" href="/sz-docs/assets/js/50.9bf5d2ab.js"><link rel="prefetch" href="/sz-docs/assets/js/51.5dc46630.js"><link rel="prefetch" href="/sz-docs/assets/js/52.a912ec7d.js"><link rel="prefetch" href="/sz-docs/assets/js/53.67bb5c60.js"><link rel="prefetch" href="/sz-docs/assets/js/54.2c797ca7.js"><link rel="prefetch" href="/sz-docs/assets/js/55.3580bd84.js"><link rel="prefetch" href="/sz-docs/assets/js/56.5252541f.js"><link rel="prefetch" href="/sz-docs/assets/js/57.3f36d034.js"><link rel="prefetch" href="/sz-docs/assets/js/58.609e0a8b.js"><link rel="prefetch" href="/sz-docs/assets/js/59.b3529e96.js"><link rel="prefetch" href="/sz-docs/assets/js/6.2d0a63f8.js"><link rel="prefetch" href="/sz-docs/assets/js/60.d52adccd.js"><link rel="prefetch" href="/sz-docs/assets/js/61.990276f0.js"><link rel="prefetch" href="/sz-docs/assets/js/62.e42f2df7.js"><link rel="prefetch" href="/sz-docs/assets/js/63.34f79dc1.js"><link rel="prefetch" href="/sz-docs/assets/js/7.307492ca.js"><link rel="prefetch" href="/sz-docs/assets/js/8.2b132dc4.js"><link rel="prefetch" href="/sz-docs/assets/js/9.3c5a8fdb.js">
+    <link rel="stylesheet" href="/sz-docs/assets/css/0.styles.677476a9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/sz-docs/" class="home-link router-link-active"><!----> <span class="site-name">生椰拿铁</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/sz-docs/guide/" class="nav-link router-link-active">
+  文章
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/sz-docs/guide/" class="nav-link router-link-active">
+  文章
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/sz-docs/guide/万字解析 - React Fiber架构.html" class="sidebar-link">第1期：万字解析 - React Fiber架构</a></li><li><a href="/sz-docs/guide/Svelte，未来十年可能取代React和Vue等其他框架的新兴技术.html" class="sidebar-link">第2期：未来之星 - Svelte</a></li><li><a href="/sz-docs/guide/一看就会 - Git篇.html" class="sidebar-link">第3期：一看就会 - Git篇</a></li><li><a href="/sz-docs/guide/意博趣深 - RxJS.html" class="sidebar-link">第4期：意博趣深 - RxJS</a></li><li><a href="/sz-docs/guide/一劳永逸 - CSS布局.html" class="sidebar-link">第5期（上）：一劳永逸 - CSS布局</a></li><li><a href="/sz-docs/guide/CSS前生今世.html" class="sidebar-link">第5期（下）：一劳永逸 - CSS前生今世</a></li><li><a href="/sz-docs/guide/降维打击-Webpack对我们的代码做了什么？.html" class="sidebar-link">第6期：降维打击-Webpack对我们的代码做了什么？</a></li><li><a href="/sz-docs/guide/轮播图篇.html" class="sidebar-link">第7期：相见恨晚 - 轮播图篇</a></li><li><a href="/sz-docs/guide/TypeScript上.html" class="sidebar-link">第8期（上）：通俗易懂 - TypeScript(上)</a></li><li><a href="/sz-docs/guide/TypeScript下.html" class="sidebar-link">第8期（下）：通俗易懂-TypeScript(下)</a></li><li><a href="/sz-docs/guide/从koa到oak.html" class="sidebar-link">第9期：谁主沉浮 - 从koa到oak</a></li><li><a href="/sz-docs/guide/数字空间 - 如何提供稳定可靠服务？.html" class="sidebar-link">第10期：数字空间 - 如何提供稳定可靠服务？</a></li><li><a href="/sz-docs/guide/序列比对-Smith–Waterman算法.html" class="active sidebar-link">第11期（上）：序列比对-Smith–Waterman算法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/sz-docs/guide/序列比对-Smith–Waterman算法.html#算法简介" class="sidebar-link">算法简介</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/sz-docs/guide/序列比对-Smith–Waterman算法.html#算法历史及演进" class="sidebar-link">算法历史及演进</a></li></ul></li><li class="sidebar-sub-header"><a href="/sz-docs/guide/序列比对-Smith–Waterman算法.html#算法过程" class="sidebar-link">算法过程</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/sz-docs/guide/序列比对-Smith–Waterman算法.html#构建惩罚得分矩阵" class="sidebar-link">构建惩罚得分矩阵</a></li><li class="sidebar-sub-header"><a href="/sz-docs/guide/序列比对-Smith–Waterman算法.html#回溯惩罚得分矩阵" class="sidebar-link">回溯惩罚得分矩阵</a></li></ul></li><li class="sidebar-sub-header"><a href="/sz-docs/guide/序列比对-Smith–Waterman算法.html#代码实现" class="sidebar-link">代码实现</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/sz-docs/guide/序列比对-Smith–Waterman算法.html#java实现" class="sidebar-link">Java实现</a></li><li class="sidebar-sub-header"><a href="/sz-docs/guide/序列比对-Smith–Waterman算法.html#javascript实现" class="sidebar-link">Javascript实现</a></li></ul></li><li class="sidebar-sub-header"><a href="/sz-docs/guide/序列比对-Smith–Waterman算法.html#应用场景" class="sidebar-link">应用场景</a></li></ul></li><li><a href="/sz-docs/guide/图布局算法-Sugiyama算法框架.html" class="sidebar-link">第11期（下）：图布局算法-Sugiyama算法框架</a></li><li><a href="/sz-docs/guide/数组进阶 - 数组学到什么样才算精通.html" class="sidebar-link">第12期（上）：数组进阶 - 数组学到什么样才算精通</a></li><li><a href="/sz-docs/guide/复杂度分析 - 这可能是你见过的最好的复杂度分析文章.html" class="sidebar-link">第12期（中）：复杂度分析 - 这可能是你见过的最好的复杂度分析文章</a></li><li><a href="/sz-docs/guide/散列表与二分查找.html" class="sidebar-link">第12期（下）：散列表与二分查找</a></li><li><a href="/sz-docs/guide/Promise漫谈.html" class="sidebar-link">第13期：一诺千金 - Promise漫谈</a></li><li><a href="/sz-docs/guide/编译原理 - 抽象语法树（Abstract Syntax Tree，AST）.html" class="sidebar-link">第14期：编译原理 - 抽象语法树（Abstract Syntax Tree，AST）</a></li><li><a href="/sz-docs/guide/如何写出健壮的CSS.html" class="sidebar-link">第15期（上）：得心应手 - 如何写出健壮的CSS</a></li><li><a href="/sz-docs/guide/CSS3的世界.html" class="sidebar-link">第15期（上）：得心应手 - CSS3的世界</a></li><li><a href="/sz-docs/guide/正则表达式.html" class="sidebar-link">第16期：如鱼得水 - 正则表达式</a></li><li><a href="/sz-docs/guide/由一道面试题想到的.html" class="sidebar-link">第17期：由一道面试题想到的</a></li><li><a href="/sz-docs/guide/浅谈移动端.html" class="sidebar-link">第18期：手机时代 - 浅谈移动端</a></li><li><a href="/sz-docs/guide/js设计模式思想之策略模式思想与发布订阅模式思想.html" class="sidebar-link">第19期： 代码重构 - 浅谈策略模式思想与发布-订阅模式思想</a></li><li><a href="/sz-docs/guide/第二十期：手写系列-简易webpack编译过程.html" class="sidebar-link">第20期：手写系列 - 简易webpack编译过程</a></li><li><a href="/sz-docs/guide/Vite pourquoi si vite.html" class="sidebar-link">第21期：Vite pourquoi si vite</a></li><li><a href="/sz-docs/guide/WebAssembly.html" class="sidebar-link">第22期：未来已来 - WebAssembly</a></li><li><a href="/sz-docs/guide/浅谈数据压缩.html" class="sidebar-link">第23期：浅谈数据压缩</a></li><li><a href="/sz-docs/guide/第二十四期：Apache POI Excel 和 EasyExcel——读写Excel.html" class="sidebar-link">第24期：Apache POI Excel 和 EasyExcel——读写Excel</a></li><li><a href="/sz-docs/guide/第二十五期：浅谈多线程.html" class="sidebar-link">第25期：浅谈多线程</a></li><li><a href="/sz-docs/guide/霍夫曼编码-Huffman Coding.html" class="sidebar-link">第26期：霍夫曼编码-Huffman Coding</a></li><li><a href="/sz-docs/guide/聚类基础-KMean和均值漂移聚类.html" class="sidebar-link">第27期：聚类基础-KMean和均值漂移聚类</a></li><li><a href="/sz-docs/guide/web性能优化.html" class="sidebar-link">第28期：web性能优化</a></li><li><a href="/sz-docs/guide/第二十九期：分包吗 - Webpack.html" class="sidebar-link">第29期：分包吗 - Webpack</a></li><li><a href="/sz-docs/guide/TypeScript类型编程.html" class="sidebar-link">第30期：类型体操 - TypeScript类型编程</a></li><li><a href="/sz-docs/guide/Javasript设计模式之状态模式和代理模式.html" class="sidebar-link">第31期（上）：Javasript设计模式之状态模式和代理模式</a></li><li><a href="/sz-docs/guide/Javasript设计模式之工厂模式和装饰器模式.html" class="sidebar-link">第31期（下）：Javasript设计模式之工厂模式和装饰器模式</a></li><li><a href="/sz-docs/guide/ahooks-一套方便且实用的React Hooks库.html" class="sidebar-link">第32期：ahooks-一套方便且实用的React Hooks库</a></li><li><a href="/sz-docs/guide/Babel-通天塔.html" class="sidebar-link">第33期：Babel-通天塔</a></li><li><a href="/sz-docs/guide/Canvas.html" class="sidebar-link">第34期：Canvas-全集宝典</a></li><li><a href="/sz-docs/guide/WebSocket原理.html" class="sidebar-link">第35期：WebSocket原理</a></li><li><a href="/sz-docs/guide/操作系统——前言.html" class="sidebar-link">第36期：操作系统——前言</a></li><li><a href="/sz-docs/guide/WebSocket数据加密.html" class="sidebar-link"> 第37期：WebSocket数据加密</a></li><li><a href="/sz-docs/guide/Redis五种数据类型实现.html" class="sidebar-link">第38期：Redis五种数据类型实现</a></li><li><a href="/sz-docs/guide/操作系统——启动流程.html" class="sidebar-link">第39期：操作系统——启动流程</a></li><li><a href="/sz-docs/guide/Docker初识.html" class="sidebar-link">第40期：Docker初识</a></li><li><a href="/sz-docs/guide/webpack-runtime.html" class="sidebar-link">第41期：揭开WebpackRuntime的面纱</a></li><li><a href="/sz-docs/guide/grid layout.html" class="sidebar-link">第42期：前端布局大法之grid布局</a></li><li><a href="/sz-docs/guide/Vuejs 3.X源码解析---渲染流程.html" class="sidebar-link">第43期：Vuejs 3.X源码解析---渲染流程</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="算法简介"><a href="#算法简介" class="header-anchor">#</a> 算法简介</h2> <p>Smith-Waterman算法是一种进行局部序列比对（相对于全局比对）的算法，用于找出两个核苷酸序列或蛋白质序列之间的相似区域。该算法的目的不是进行全序列的比对，而是找出两个序列中具有高相似度的片段。以下面的例子来说明该算法的功能。</p> <p>问题：<br>
+找出字符串“TGTTACGG”和字符串“GGTTGACTA”的相似子串。</p> <p>解：</p> <div class="language- extra-class"><pre class="language-text"><code>TG“TT AC”GG
+GG“TTGAC”TA
+引号内部分就是两字符串中的各自相似子串
+</code></pre></div><h3 id="算法历史及演进"><a href="#算法历史及演进" class="header-anchor">#</a> 算法历史及演进</h3> <p>该算法由坦普尔·史密斯（Temple F. Smith）和迈克尔·沃特曼（Michael S. Waterman）于1981年提出。Smith-Waterman算法是Needleman-Wunsch算法的一个变体，二者都是动态规划算法。后来常用的序列比对算法例如FASTA和大名鼎鼎的BLAST也是基于这个算法改进的。</p> <h2 id="算法过程"><a href="#算法过程" class="header-anchor">#</a> 算法过程</h2> <p>Smith-Waterman算法分为两个步骤。<br>
+步骤1：通过两字符串构建“惩罚得分矩阵”。<br>
+步骤2：通过回溯“惩罚得分矩阵”以定位两字符串中的相似子串部分。</p> <h3 id="构建惩罚得分矩阵"><a href="#构建惩罚得分矩阵" class="header-anchor">#</a> 构建惩罚得分矩阵</h3> <p>以字符串“TGTTACGG”和“GGTTGACTA”为例，构建“惩罚得分矩阵”。</p> <p>步骤1.1：通过两字符串长度生成一个(m+1)*(n+1)的二维矩阵，并初始化第一行和第一列的分数为零。<br> <img src="https://pan.udolphin.com/files/image/2021/9/fdc85fd8d9320d575ede48bdd96bcf26.jpg" alt=""></p> <p>步骤1.2：逐行确定无得分格子的分数。<br>
+步骤1.2.1：分数由该格子“左上”、“上”、“左”三个相邻格子的分数共同决定。如果该格子对应的两字符串中字符相同时，“左上”方向的分数为“左上”分数+3；反之为“左上”分数-3。<br> <img src="https://pan.udolphin.com/files/image/2021/9/6e33d1215d245827f6e82b39fe75820a.jpg" alt=""><img src="https://pan.udolphin.com/files/image/2021/9/44e22b9b3828c06c718cd3ebc4be0388.jpg" alt=""></p> <p>步骤1.2.2：“上”和“左”方向的分数为各自分数-2。<br> <img src="https://pan.udolphin.com/files/image/2021/9/0ca4378347eaf6b89a4caaccf41f5dee.jpg" alt=""><br>
+这样三个方向的分数就都有了。<br> <img src="https://pan.udolphin.com/files/image/2021/9/712652e77829d9ba14df3a2075d9ddf7.jpg" alt=""></p> <p>步骤1.2.3：取这三个方向分数的最大值为该格子的分数。<br> <img src="https://pan.udolphin.com/files/image/2021/9/6399d75930b761566fb00dd3d5429404.jpg" alt=""></p> <p>步骤1.2.4：如果该分数为负，则该分数为零。<br> <img src="https://pan.udolphin.com/files/image/2021/9/9e541675a6ed93e1e10d8239f81aecd9.jpg" alt=""></p> <p>按如上步骤就可以构建完“惩罚得分矩阵”。<br> <img src="https://pan.udolphin.com/files/image/2021/9/8b04519447396bd544881858f5975da1.gif" alt=""></p> <h3 id="回溯惩罚得分矩阵"><a href="#回溯惩罚得分矩阵" class="header-anchor">#</a> 回溯惩罚得分矩阵</h3> <p>我们可以知道“惩罚得分矩阵”的每个非零分数的格子是由哪个相邻格子决定的（来源格子）。<br> <img src="https://pan.udolphin.com/files/image/2021/9/c67a090f20bb1391687aa3faa98b7f08.jpg" alt=""></p> <p>步骤2.1：找到分数最高的那个格子。<br>
+步骤2.2：从分数最高格子开始，从它的“来源格子”中找到最大分数的那个格子，依次回溯到分数为零的格子为止，这样就可以确定x轴方向上的区间和y轴方向上的区间。这两个区间便可以映射到两个字符串的相似子串。<br> <img src="https://pan.udolphin.com/files/image/2021/9/5593d80a35351b94eace1c07c63852c5.jpg" alt=""></p> <h2 id="代码实现"><a href="#代码实现" class="header-anchor">#</a> 代码实现</h2> <h3 id="java实现"><a href="#java实现" class="header-anchor">#</a> Java实现</h3> <div class="language- extra-class"><pre class="language-text"><code>void smith_waterman(String a, String b) {
+    int[][] scoreTable = new int[b.length() + 1][a.length() + 1];
+    int[][][][] sourceTable = new int[b.length() + 1][a.length() + 1][3][2];
+    // 构建惩罚得分矩阵
+    int[][] source_null = new int[][] {new int[] {-1, -1}, new int[] {-1, -1}, new int[] {-1, -1}};
+    for (int y = 0; y &lt; b.length(); y++) {
+        String letterB = b.substring(y, y + 1);
+	for (int x = 0; x &lt; a.length(); x++) {
+ 	    String letterA = a.substring(x, x + 1);
+	    int leftUpScore = scoreTable[y][x] + (letterA.equals(letterB) ? 3 : -3);
+	    int upScore = scoreTable[y][x + 1] - 2;
+	    int leftScore = scoreTable[y + 1][x] - 2;
+	    int score = leftUpScore;
+	    int[][] source = new int[][] {new int[] {x, y}, new int[] {-1, -1}, new int[] {-1, -1}};
+	    if (upScore == score) {
+		source[1] = new int[] {y, x + 1};
+	    } else if (upScore &gt; score) {
+		score = upScore;
+		source = new int[][] {new int[] {-1, -1}, new int[] {y, x + 1}, new int[] {-1, -1}};
+	    }
+	    if (leftScore == score) {
+		source[2] = new int[] {y + 1, x};
+	    } else if (leftScore &gt; score) {
+		score = leftScore;
+		source = new int[][] {new int[] {-1, -1}, new int[] {-1, -1}, new int[] {y + 1, x}};
+	    }
+	    if (score &lt; 0) {
+		score = 0;
+		sourceTable[y + 1][x + 1] = source_null;
+	    } else {
+		sourceTable[y + 1][x + 1] = source;
+	    }
+	    scoreTable[y + 1][x + 1] = score;
+	}
+    }
+    // 回溯惩罚得分矩阵
+    int maxScore = -1;
+    int maxX = -1;
+    int maxY = -1;
+    for (int y = 1; y &lt; scoreTable.length; y++) {
+	int[] row = scoreTable[y];
+	for (int x = 1; x &lt; row.length; x++) {
+	    if (maxScore &lt; 0 || maxScore &lt; row[x]) {
+		maxScore = row[x];
+		maxX = x;
+		maxY = y;
+	    }
+	}
+    }
+    if (maxScore &gt; 0) {
+	int minX = maxX;
+	int minY = maxY;
+	while (true) {
+	    int maxIndex = -1;
+	    int[][] sources = sourceTable[minY][minX];
+	    for (int i = 0; i &lt; sources.length; i++) {
+		int[] source = sources[i];
+		if (source[0] &gt;= 0) {
+		    if (maxIndex &lt; 0 || scoreTable[source[1]][source[0]] &gt; scoreTable[sources[maxIndex][1]][sources[maxIndex][0]]) {
+			maxIndex = i;
+		    }
+		}
+	    }
+	    if (maxIndex &gt;= 0) {
+		if (scoreTable[sources[maxIndex][1]][sources[maxIndex][0]] &gt; 0) {
+		    minX = sources[maxIndex][0];
+		    minY = sources[maxIndex][1];
+		} else {
+		    break;
+		}
+	    } else {
+		break;
+	    }
+	}
+	System.out.println(a + &quot;: &quot; + a.substring(minX - 1, maxX));
+	System.out.println(b + &quot;: &quot; + b.substring(minY - 1, maxY));
+    }
+}
+</code></pre></div><h3 id="javascript实现"><a href="#javascript实现" class="header-anchor">#</a> Javascript实现</h3> <div class="language- extra-class"><pre class="language-text"><code>function smith_waterman(a, b) {
+    let scoreTable = new Array();
+    let sourceTable = new Object();
+    // 构建惩罚得分矩阵
+    for (let y = 0; y &lt;= b.length; y++) {
+	let row = new Array();
+	for (let x = 0; x &lt;= a.length; x++) {
+	    row.push(0);
+	}
+	scoreTable.push(row);
+    }
+    for (let y = 1; y &lt; scoreTable.length; y++) {
+	let letterB = b.substring(y - 1, y);
+	for (let x = 1; x &lt; scoreTable[y].length; x++) {
+	    let letterA = a.substring(x - 1, x);
+	    let leftUpScore = scoreTable[y - 1][x - 1] + (letterA == letterB ? 3 : -3);
+	    let upScore = scoreTable[y - 1][x] - 2;
+	    let leftScore = scoreTable[y][x - 1] - 2;
+	    let score = leftUpScore;
+	    let source = [[x - 1, y - 1]];
+	    if (upScore == score) {
+		source.push([y - 1, x]);
+	    } else if (upScore &gt; score) {
+		score = upScore;
+		source = [[y - 1, x]];
+	    }
+	    if (leftScore == score) {
+		source.push([y, x - 1]);
+	    } else if (leftScore &gt; score) {
+		score = leftScore;
+		source = [[y, x - 1]];
+	    }
+	    if (score &lt; 0) {
+		score = 0;
+	    } else {
+		sourceTable[x + &quot;_&quot; + y] = source;
+	    }
+	    scoreTable[y][x] = score;
+	}
+    }
+    // 回溯惩罚得分矩阵
+    let maxScore = -1;
+    let maxX = -1;
+    let maxY = -1;
+    for (let y = 1; y &lt; scoreTable.length; y++) {
+	for (let x = 1; x &lt; scoreTable[y].length; x++) {
+	    if (maxScore &lt; 0 || maxScore &lt; scoreTable[y][x]) {
+		maxScore = scoreTable[y][x];
+		maxX = x;
+		maxY = y;
+	    }
+	}
+    }
+    if (maxScore &gt; 0) {
+	let minX = maxX;
+	let minY = maxY;
+	while (true) {
+	    if (sourceTable[minX + &quot;_&quot; + minY]) {
+		let sources = sourceTable[minX + &quot;_&quot; + minY];
+		let maxIndex = 0;
+		for (let i = 1; i &lt; sources.length; i++) {
+		    if (scoreTable[sources[i][1]][sources[i][0]] &gt; scoreTable[sources[maxIndex][1]][sources[maxIndex][0]]) {
+			maxIndex = i;
+		    }
+		}
+		if (scoreTable[sources[maxIndex][1]][sources[maxIndex][0]] &gt; 0) {
+		    minX = sources[maxIndex][0];
+		    minY = sources[maxIndex][1];
+		} else {
+		    break;
+		}
+	    } else {
+		break;
+	    }
+	}
+	console.log(a + &quot;: &quot; + a.substring(minX - 1, maxX));
+	console.log(b + &quot;: &quot; + b.substring(minY - 1, maxY));
+    }
+}
+</code></pre></div><h2 id="应用场景"><a href="#应用场景" class="header-anchor">#</a> 应用场景</h2> <p>Smith-Waterman算法来源于生物工程，所以该算法广泛应用于DNA比对等场景。</p> <p>在公司产品中也有所使用。比如CMDB产品中，通过系统或业务日志来自动发现CI的过程中也使用了该算法。</p> <p>再比如WiKi服务中有一项“划词评论”的功能。当读者在某一发布版本的文章中评论了一些词句，但是作者修改了内容生成了新版本的文章，这时候老版本上的评论定位必然会错乱，那么我们使用该算法依然可以帮助老评论定位到新版本文章的正确位置。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/sz-docs/guide/数字空间 - 如何提供稳定可靠服务？.html" class="prev">
+        第10期：数字空间 - 如何提供稳定可靠服务？
+      </a></span> <span class="next"><a href="/sz-docs/guide/图布局算法-Sugiyama算法框架.html">
+        第11期（下）：图布局算法-Sugiyama算法框架
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/sz-docs/assets/js/app.5b32c35c.js" defer></script><script src="/sz-docs/assets/js/2.733019b2.js" defer></script><script src="/sz-docs/assets/js/43.bc99f8ea.js" defer></script>
+  </body>
+</html>
